@@ -22,14 +22,20 @@ body {
 .running-text {
     color: #0ff;
     font-weight: bold;
-    font-size: 1em; /* Adjusted for mobile */
-    background-color: rgba(0, 0, 0, 0.5); /* Background to make text more readable */
+    font-size: 0.9em; /* Liitan ang text */
+    background-color: rgba(0, 0, 0, 0.5); /* Background para readable */
     padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
     overflow: hidden;
+    z-index: 5; /* Para hindi matakpan yung ibang parts */
 }
 
 #datetime {
-    font-size: 0.9em;
+    font-size: 0.8em; /* Smaller text size for datetime */
     color: #00ffcc;
     position: absolute;
     right: 10px;
@@ -38,10 +44,10 @@ body {
 
 .container {
     text-align: center;
-    width: 90%; /* Make it responsive */
-    max-width: 350px; /* Limit the width */
+    width: 90%;
+    max-width: 350px;
     padding: 15px;
-    margin-top: 80px;
+    margin-top: 80px; /* Space below the fixed header */
     background-color: rgba(0, 30, 30, 0.8);
     border-radius: 8px;
     box-shadow: 0px 0px 15px #00ffcc;
@@ -67,14 +73,14 @@ button {
     margin-top: 20px;
     text-align: center;
     color: #fff;
-    font-size: 16px; /* Adjusted for mobile */
+    font-size: 14px; /* Liitan para hindi mag-overflow */
 }
 
 .step-table {
     width: 100%;
     border-collapse: collapse;
     margin: 10px 0;
-    font-size: 14px; /* Adjusted for mobile */
+    font-size: 14px;
 }
 
 .step-header {
