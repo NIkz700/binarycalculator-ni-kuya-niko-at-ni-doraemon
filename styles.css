@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1f1f30, #3f3f5a);
+    color: #00ffcc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+.running-text-container {
+    background-color: #000000;
+    color: #00ffcc;
+    padding: 5px;
+}
+
+.running-text {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#datetime {
+    font-size: 0.9em;
+    color: #00ffcc;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #00ffcc;
+}
+
+.container {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    margin-top: 180px;
+    background-color: rgba(0, 30, 30, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px #00ffcc;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #555;
+    font-size: 16px;
+}
+
+button {
+    background-color: #00ffcc;
+    color: #1c1c1e;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.step-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.step-header {
+    text-align: right;
+    padding: 5px;
+    color: #00ffcc;
+}
+
+.step-value {
+    text-align: center;
+    padding: 5px;
+}
+
+.step-decimal {
+    text-align: left;
+    padding: 5px;
+    color: #fffb;
+}
